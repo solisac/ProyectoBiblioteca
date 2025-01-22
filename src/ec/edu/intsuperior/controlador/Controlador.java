@@ -5,6 +5,7 @@
  */
 package ec.edu.intsuperior.controlador;
 
+import ec.edu.intsuperior.modelo.Conexion;
 import ec.edu.intsuperior.vista.*;
 
 /**
@@ -14,7 +15,15 @@ import ec.edu.intsuperior.vista.*;
 public class Controlador {
     Loggin loggin = new Loggin(this);
     Administrador administrador = new Administrador(this);
+    Conexion conexion=new Conexion(this);
     
+    public void conectar(){
+        conexion.conectar();
+    }
+    
+    public void cerrarConexion(){
+        conexion.cerrarConexion();
+    }
     
     public void getLoggin(){
         loggin.setVisible(true);

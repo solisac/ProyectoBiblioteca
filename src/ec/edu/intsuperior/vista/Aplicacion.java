@@ -6,6 +6,7 @@
 package ec.edu.intsuperior.vista;
 
 import ec.edu.intsuperior.controlador.Controlador;
+import ec.edu.intsuperior.modelo.Conexion;
 import ec.edu.intsuperior.modelo.Usuario;
 import javax.swing.JOptionPane;
 
@@ -15,6 +16,11 @@ import javax.swing.JOptionPane;
  */
 public class Aplicacion {
     public static void main(String[] args) {
+//        
+//        Conexion cn=new Conexion();
+//        cn.conectar();
+//        cn.cerrarConexion();
+        
         Controlador controlador= new Controlador();
         controlador.getLoggin();
         
